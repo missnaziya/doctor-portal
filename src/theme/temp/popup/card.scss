@@ -1,0 +1,568 @@
+.MuiDialogContent-root {
+  border-bottom: 0 !important;
+  border-top: 0 !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+
+.popup_content {
+  height: 100%;
+  // scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #fff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #fafafa;
+    border-radius: 30px;
+  }
+}
+
+.card-info {
+  padding: 0px 0px !important;
+
+  @media screen and (max-width: 991px) {
+    padding: 0px;
+  }
+
+  .modal_heading_main {
+    margin: 0px 0 0px;
+
+    .heading_bottom {
+      color: #263238;
+      font-size: 25px;
+      font-weight: 700;
+      text-align: center;
+      text-transform: capitalize;
+      padding: 12px 0;
+      width: 50%;
+      border-bottom: 2px solid #00acba;
+
+      @media screen and (max-width: 568px) {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 0px;
+        border-bottom: 2px solid #00acba;
+      }
+    }
+
+    .heading_bottom_without_border {
+      color: #263238;
+      font-size: 22px;
+      font-weight: 700;
+      text-align: center;
+      text-transform: capitalize;
+      padding: 5px 0;
+      width: 100%;
+      margin-bottom: 40px;
+      border-bottom: 1px solid #00acba;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media screen and (max-width: 568px) {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .field-info-details-desc {
+    color: #263238;
+    font-size: 22px;
+    font-weight: 600;
+
+    span {
+      display: block;
+      color: #959595;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  .divider-horizontal {
+    border: 1.5px solid #f1f1f1;
+    margin: 48px 0 25px;
+  }
+
+  .inputs_fields_ratio {
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      width: 100%;
+      gap: 28px;
+    }
+
+    // @media screen and (max-width: 1024px) {
+    //     margin-bottom: 15px;
+    // }
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-end !important;
+      gap: 15px;
+      width: 100%;
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+
+      li {
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          text-align: center;
+        }
+
+        .add_btn {
+          height: 49px;
+          width: 146px;
+          cursor: pointer;
+          @media screen and (max-width: 568px) {
+            width: 100%;
+          }
+        }
+
+        .creat_btn {
+          height: 49px;
+          width: 212px;
+
+          @media screen and (max-width: 568px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .MuiOutlinedInput-root {
+      border-radius: 8px;
+
+      &.Mui-focused {
+        fieldset {
+          border-color: $primary-color;
+        }
+      }
+
+      &.Mui-error {
+        border-color: #d32f2f !important;
+
+        fieldset {
+          border-color: #d32f2f;
+        }
+      }
+    }
+
+    label.MuiInputLabel-formControl {
+      background: #fff;
+
+      &.MuiFormLabel-colorSuccess.Mui-focused {
+        color: $primary-color;
+      }
+    }
+
+    .mandatory {
+      font-family: 'Titillium Web';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 20px;
+      color: #263238;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex: 1;
+      white-space: nowrap;
+
+      span {
+        color: $primary-color;
+      }
+
+      @media screen and (max-width: 768px) {
+        justify-content: center;
+      }
+
+      @media screen and (max-width: 820px) {
+        justify-content: center;
+        margin-right: 0px !important;
+      }
+    }
+
+    .outerBtn {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 15px;
+      flex: 1;
+      list-style: none;
+
+      .btn {
+        font-size: 18px;
+        letter-spacing: 2px;
+        width: 165px;
+        height: 49px;
+        flex: 1;
+        border: 1px solid #032439;
+        border-radius: 8px;
+        background: none;
+      }
+
+      .reg {
+        color: #fff;
+        border: none;
+        background-color: $primary-color;
+      }
+
+      .mandatory {
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+        color: #263238;
+        white-space: nowrap;
+      }
+    }
+
+    .add_meditation {
+      height: 50px;
+      width: 146px;
+
+      @media screen and (max-width: 568px) {
+        width: 100%;
+      }
+    }
+
+    .add_meditation_bg {
+      height: 50px;
+      width: 230px;
+
+      @media screen and (max-width: 568px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// .MuiAppBar-root {
+//     background-color: #fff !important;
+//     color: #000 !important;
+// }
+
+.MuiPaper-elevation {
+  box-shadow: none !important;
+}
+
+.checkbox_outers {
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
+  padding-top: 28px !important;
+  padding-left: 16px !important;
+}
+
+.forgotpwd-heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  color: #ffffff;
+}
+
+.check-box-custom-remember-white {
+  display: block;
+  position: relative;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.check-box-custom-remember-white input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark_white {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00c6c0;
+  border-radius: 5px;
+}
+
+.check-box-custom-remember-white:hover input ~ .checkmark_white:after {
+  display: block;
+  border: 1px solid #cbcbcb;
+  border-width: 0 3px 3px 0;
+}
+
+.check-box-custom-remember-white:active input ~ .checkmark_white:after {
+  display: block;
+  border: 1px solid #00c6c0;
+  border-width: 0 3px 3px 0;
+}
+
+.check-box-custom-remember-white:active input ~ .checkmark_white:after {
+  display: block;
+}
+
+.check-box-custom-remember-white input:checked ~ .checkmark_white {
+  border: 1px solid #fff !important;
+}
+
+.checkmark_white:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.check-box-custom-remember-white input:checked ~ .checkmark_white:after {
+  display: block;
+  border: 1px solid #fff;
+  border-width: 0 3px 3px 0;
+}
+
+.check-box-custom-remember-white .checkmark_white:after {
+  left: 8px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: 1px solid #fff;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* Modal Modified CSS Layout Updated Here */
+.MuiDialog-paperScrollPaper {
+  box-shadow: 0px 0px 100px -20px rgba(0, 0, 0, 0.25) !important;
+  border-radius: 12px;
+
+  #customized-dialog-title {
+    padding: 0;
+
+    button {
+      top: 18px;
+      right: 22px;
+      background-color: #fff;
+      z-index: 999999;
+
+      svg {
+        fill: #263238;
+      }
+    }
+  }
+  #customized-dialog-titles {
+    padding: 24px 34px !important;
+
+    button {
+      top: 18px;
+      right: 22px;
+      background-color: #fff;
+      z-index: 999999;
+
+      svg {
+        fill: #263238;
+      }
+    }
+  }
+}
+
+.gap {
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.btnOuter {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media only screen and (max-width: 820px) {
+    flex-direction: column;
+  }
+
+  .outerBtnsCancel {
+    .cancel_btn {
+      height: 50px;
+      width: 146px;
+
+      @media only screen and (max-width: 568px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.outerBtnsCancel {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  list-style: none;
+
+  .btn {
+    font-size: 18px;
+    letter-spacing: 2px;
+    flex: 1;
+    height: 49px;
+    flex: 1;
+    border: 1px solid #032439;
+    border-radius: 8px;
+    background: none;
+  }
+
+  .reg {
+    color: #fff;
+    border: none;
+    background-color: $primary-color;
+  }
+}
+
+.add_btnouter {
+  margin-bottom: 8px;
+
+  @media only screen and (max-width: 568px) {
+    flex-direction: column;
+  }
+
+  .add_outerbtnscancel {
+    @media only screen and (max-width: 568px) {
+      width: 100%;
+    }
+  }
+
+  .add_outerbtns {
+    @media only screen and (max-width: 568px) {
+      width: 100%;
+    }
+  }
+
+  .add_outerbtnscancel {
+    @media only screen and (max-width: 568px) {
+      width: 100%;
+    }
+
+    .add_cancel_btn {
+      @media only screen and (max-width: 568px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.add_outerbtns {
+  flex: 1;
+
+  @media only screen and (max-width: 568px) {
+    flex-direction: column;
+  }
+
+  .add_outerbtnscancel {
+    @media only screen and (max-width: 568px) {
+      width: 100%;
+    }
+
+    .add_cancel_btn {
+      @media only screen and (max-width: 568px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .add_outerbtns {
+    @media only screen and (max-width: 568px) {
+      width: 100%;
+    }
+
+    .cancel_btn {
+      @media only screen and (max-width: 568px) {
+        width: 100%;
+      }
+    }
+  }
+}
+.MuiAutocomplete-root.MuiOutlinedInput-root {
+  /* padding: 9px; */
+  height: 55px !important ;
+}
+
+.modalOuter {
+  .MuiDialog-paperScrollPaper {
+    box-shadow: 0px 0px 100px -20px rgba(0, 0, 0, 0.25) !important;
+    border-radius: 12px;
+
+    #customized-dialog-titles {
+      padding: 24px 34px !important;
+      font-family: 'Titillium Web';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 49px;
+      /* identical to box height */
+
+      color: #263238;
+
+      button {
+        top: 18px;
+        right: 22px;
+        background-color: #fff;
+        z-index: 999999;
+
+        svg {
+          fill: #263238;
+        }
+      }
+    }
+    .MuiDialogActions-root {
+      padding: 8px;
+      margin-bottom: 27px;
+    }
+    .MuiDialogContent-root {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0px 34px !important;
+      border-top: 1px solid rgba(149, 149, 149, 0.23) !important;
+      border-bottom: 1px solid rgba(149, 149, 149, 0.23) !important;
+      margin-bottom: 20px;
+    }
+    .modal_heading {
+      font-family: 'Titillium Web';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 33px;
+
+      color: #263238;
+    }
+  }
+}

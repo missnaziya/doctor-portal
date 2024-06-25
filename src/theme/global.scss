@@ -1,0 +1,475 @@
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&display=swap');
+
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: $primary-font !important;
+}
+
+body * {
+  font-family: $primary-font !important;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.gridTop {
+  padding-top: 0px !important;
+
+  .mandatory-out {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 568px) {
+      display: flex;
+      flex-direction: column !important;
+      align-items: center;
+    }
+  }
+}
+
+//scroll
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-color: $primary-color lighten($primary-color, 50%);
+  scrollbar-width: thin;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  background: lighten($primary-color, 50%);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $primary-color;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+}
+
+.d-vh-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-vh-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 400px) {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    flex-direction: column-reverse !important;
+    // height: 100% !important;
+  }
+}
+
+.page {
+  @media screen and (max-width: 568px) {
+    height: 100% !important;
+  }
+
+  min-height: 100vh;
+  height: 100%;
+}
+
+.default-layout {
+  background-image: url('../assets/bg/bg-top-green.svg');
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding: 40px 64px;
+  height: 100%;
+  margin-bottom: 50px;
+
+  @media screen and (max-width: 991px) {
+    padding: 30px 0 0 0;
+  }
+}
+
+a:-webkit-any-link {
+  color: inherit !important;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+.Contact_img {
+  margin-top: 50px;
+
+  .tw_icon_out {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-family: 'Titillium Web';
+    font-weight: 700;
+    font-size: 34px;
+    text-transform: capitalize;
+    color: #676464;
+
+    @media only screen and (min-width: 568px) and (max-width: 1024px) {
+      font-size: 28px;
+    }
+
+    @media only screen and (min-width: 300px) and (max-width: 567px) {
+      font-size: 22px;
+    }
+
+    .tw_icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 36px;
+      width: 36px;
+      border-radius: 50%;
+      border: 2px solid #00acba;
+      font-family: 'Titillium Web';
+      font-weight: 600;
+      font-size: 14px;
+      text-transform: capitalize;
+      color: #00acba;
+
+      @media only screen and (min-width: 568px) and (max-width: 1024px) {
+        height: 30px;
+        width: 30px;
+        font-size: 11px;
+      }
+
+      @media only screen and (min-width: 300px) and (max-width: 567px) {
+        height: 25px;
+        width: 25px;
+        font-size: 11px;
+      }
+    }
+  }
+}
+
+.Prescribe-icon {
+  position: fixed;
+  bottom: 0px;
+  left: 30px;
+  cursor: pointer;
+  z-index: 99999;
+
+  img {
+    width: 207px !important;
+    height: 72px !important;
+  }
+}
+
+.prescribe-order-icon {
+  position: fixed;
+  bottom: 0px;
+  left: 30px;
+  cursor: pointer;
+  z-index: 99999;
+
+  img {
+    width: 207px !important;
+    height: 72px !important;
+  }
+}
+
+.prescriptions_main {
+  min-height: 80vh;
+
+  .recent-order-table-layout {
+    table {
+      thead {
+        th {
+          text-align: center;
+          border: none;
+        }
+      }
+
+      tbody {
+        td {
+          text-align: center;
+          font-size: 18px;
+        }
+
+        .table_first {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .recent-order-table-layouts {
+    .MuiPaper-root.MuiTableContainer-root {
+      border-radius: 0px 0px 15px 15px !important;
+    }
+
+    table {
+      thead {
+        th {
+          text-align: center;
+          border: none;
+        }
+      }
+
+      tbody {
+        td {
+          text-align: center;
+        }
+
+        .table_first {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.search_box {
+  margin-bottom: 20px;
+}
+
+table {
+  thead {
+    th {
+      border: none !important;
+    }
+  }
+}
+
+.MuiBox-root {
+  @media screen and (max-width: 568px) {
+    padding: 0;
+  }
+}
+.radio_btn_stack>div:first-of-type{
+  padding-left: 80px;
+}
+.radio_btn_stack>div:last-of-type{
+  padding-left: 50px;
+  margin-right: -80px;
+}
+
+@media only screen and (max-width: 846px) {
+  .radio_btn_stack>div:first-of-type{
+    padding-left: 40px;
+  }
+  .radio_btn_stack>div:last-of-type{
+    padding-left: 0px;
+    margin-right: 0px !important;
+  }
+}
+@media only screen and (min-width: 846px) and (max-width: 990px) {
+  .radio_btn_stack>div:first-of-type{
+    padding-left: 80px;
+  }
+  .radio_btn_stack>div:last-of-type{
+    padding-left: 0px;
+  }
+}
+.radio_btn_stack {
+  width: 100%;
+  justify-content: center;
+
+  .radio_grid {
+    text-align: center;
+    
+    label {
+      span {
+        font-style: normal;
+        font-weight: 400 !important;
+        font-size: 16px;
+        line-height: 24px;
+        color: #263238;
+
+        svg {
+          fill: #528097 !important;
+
+          path {
+            fill: #00acba !important;
+          }
+        }
+
+        font-family: 'Titillium Web';
+        font-weight: 600;
+        text-transform: capitalize;
+        color: #02223a;
+
+        @media only screen and (max-width: 668px) {
+          font-size: 15px !important;
+        }
+        @media only screen and (min-width: 669px) and (max-width: 991px) {
+          font-size: 20px !important;
+        }
+      }
+    }
+  }
+}
+
+.pac-container {
+  z-index: 9999999;
+}
+
+.MuiRadio-root.Mui-checked {
+  color: #00acba !important;
+}
+
+.fav-icon-outer {
+  img {
+    cursor: pointer;
+  }
+
+  .fav-filled {
+    color: #00acba !important;
+  }
+}
+
+.product-insert-icon-outer {
+  cursor: pointer;
+}
+
+.loading-indicator:before {
+  content: '';
+  background: #000000cc;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+}
+
+.loading-indicator:after {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  // z-index: 1001;
+  color: white;
+  z-index: 9999999;
+
+  content: ' ';
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+.main-content-wrapper-full {
+  padding-bottom: 60px;
+}
+
+.paymentText {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 136.6%;
+  color: #959595;
+  display: flex;
+  padding-top: 6px;
+}
+
+.optionalText {
+  span {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 23px;
+    color: #959595;
+    // display: flex;
+  }
+
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  color: #959595;
+  display: flex;
+  padding-left: 16px;
+}
+
+.NoDataFound {
+  width: 100%;
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px !important;
+  line-height: 136.6%;
+  color: #00acba !important;
+  display: flex !important;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 6px;
+}
+
+.forgetInputAlignment .form-input {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+
+  color: #676464;
+
+  label {
+    color: #676464;
+  }
+
+  input {
+    color: #676464;
+  }
+
+  .MuiInputAdornment-root p {
+    color: #676464;
+  }
+}
+
+#basic-menu {
+  height: 135px;
+
+  li {
+    height: 65px;
+  }
+}

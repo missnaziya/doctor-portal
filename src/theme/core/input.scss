@@ -1,0 +1,143 @@
+.form-input {
+  input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff;
+    -webkit-text-size-adjust: 0.75rem;
+    // -webkit-box-shadow:0 0 0 50px transparent inset;
+    // -webkit-backface-visibility: hidden;
+  }
+
+  position: relative !important;
+  display: flex;
+  justify-content: space-between;
+
+  .MuiInputBase-formControl {
+    fieldset {
+      border: 1px solid $primary-grey-color;
+    }
+  }
+
+  input {
+    border-radius: 6px;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .icon {
+    width: 35px;
+    height: 35px;
+    left: 10px;
+    top: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & + div {
+      label[data-shrink="false"] {
+        left: 35px;
+      }
+
+      input {
+        padding-left: 50px;
+      }
+    }
+  }
+
+  label[data-shrink="true"].Mui-focused {
+    color: $primary-color;
+  }
+
+  .MuiFormLabel-asterisk {
+    color: #00ACBA;
+    margin-left: -2px;
+  }
+  // .MuiInputAdornment-root p{
+
+  // }
+}
+
+.dark .form-input {
+  color: #fff !important;
+
+  label {
+    color: #fff;
+  }
+
+  input {
+    color: #fff;
+  }
+  
+  .MuiInputAdornment-root p {
+    color: #fff;
+  }
+}
+
+//
+.Mui-error {
+  color: $danger-color !important;
+  text-align: right;
+}
+.MuiOutlinedInput-root{
+  border-radius: 8px !important;
+}
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-fullWidth.MuiInputBase-formControl:hover {
+  .MuiOutlinedInput-notchedOutline {
+    border-color: $primary-color !important;
+  }
+}
+
+.Mui-focused.Mui-error .MuiOutlinedInput-notchedOutline {
+  border-color: $danger-color !important;
+}
+
+.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: $primary-color !important;
+}
+
+.Mui-focused.MuiOutlinedInput-notchedOutline {
+  border-color: $primary-color !important;
+}
+
+.form-input.select {
+  p {
+    font-size: 0.75rem;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+    text-align: right;
+    margin-top: 3px;
+    margin-right: 14px;
+    margin-bottom: 0;
+    margin-left: 14px;
+  }
+}
+
+
+.autocomplete .form-input {
+  label[data-shrink="false"]  {
+    // transform: translate(14px, 14px) scale(1);
+  }
+  .MuiOutlinedInput-root {
+    padding: 0px 14px;
+  }
+  .MuiInputBase-formControl fieldset {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  @media only screen and (max-width: 766px) {
+    label[data-shrink="false"]  {
+      // transform: translate(7px, 7px) scale(1);
+    }
+  }
+
+  @media only screen and (min-width: 767px) and (max-width: 991px) {
+    label[data-shrink="false"]  {
+      // transform: translate(10px, 10px) scale(1);
+    }
+  }
+}

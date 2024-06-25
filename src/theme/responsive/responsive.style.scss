@@ -1,0 +1,36 @@
+.product-tour{
+    display:none !important;
+}
+
+.textColor{
+    color: #00acba ;
+}
+
+.logoutBtn{
+    padding-right: 10px;
+    align-items: flex-end ;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:480px) {
+    .Toastify__toast-container--top-right {
+        top: 0.5em !important;
+    }
+}
+
+
+
+@media only screen and (min-width: 411px) and (max-width: 990px) {
+    .ordersteps_main{
+
+        padding: 44px 0px 44px 0px !important;
+    }
+
+  }
+  .card-sample-counting {
+    h4 {
+        width: 150px;
+      }
+  }
+

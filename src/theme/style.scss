@@ -1,0 +1,83 @@
+// Titillium Web Fonts
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&display=swap');
+
+@import './variables.scss';
+@import './typography.scss';
+@import './global.scss';
+
+@import './core/input.scss';
+@import './core/check-input.scss';
+
+@import './pages/components/header.scss';
+@import './pages/components/footer.scss';
+@import './pages/components/search-bar.scss';
+
+@import './pages/login.scss';
+@import './pages/signup.scss';
+@import './pages/forgot.scss';
+@import './pages/dashboard.scss';
+
+@import './components/chat-floating-icon.scss';
+@import './components/tabs-bar.scss';
+@import './components/auto-complete.scss';
+
+@import './temp/pages/contact.scss';
+@import './temp/pages/contact_profile.scss';
+@import './temp/pages/favorites.scss';
+@import './temp/pages/general_info.scss';
+@import './temp/pages/managing_orders.scss';
+@import './temp/pages/patient.scss';
+@import './temp/pages/privacy_policy.scss';
+@import './temp/pages/prescription-ordering.scss';
+@import './temp/pages/product.scss';
+@import './temp/pages/settings.scss';
+
+@import './temp/popup/AddMedication.scss';
+@import './temp/popup/card.scss';
+@import './temp/popup/popup.scss';
+@import './temp/popup/newPatient.scss';
+@import './temp/table.scss';
+
+span.profile_icon {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 27px;
+  width: 27px;
+  border-radius: 50%;
+  background-color: #00acba;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#basic-menu {
+  .MuiPaper-root.MuiMenu-paper.MuiPaper-root.MuiPopover-paper {
+    left: unset !important;
+    top: 112px !important;
+    right: 50px !important;
+    width: 200px !important;
+  }
+}
+
+.dashboard_dropdown {
+  width: 100%;
+  align-items: center;
+  margin: 5px 5px;
+}
+
+input:-internal-autofill-selected {
+  appearance: menulist-button;
+  background-image: none !important;
+  background-color: transparent !important;
+  color: inherit !important;
+}
+
+.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-qm9mjt-MuiAutocomplete-root .MuiOutlinedInput-root {
+  height: auto !important;
+}
+.MuiAutocomplete-hasClearIcon.css-qm9mjt-MuiAutocomplete-root .MuiOutlinedInput-root {
+  height: auto !important;
+}

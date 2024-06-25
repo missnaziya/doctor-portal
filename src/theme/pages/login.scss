@@ -1,0 +1,116 @@
+.login-page {
+  background: #02223a !important;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+
+  .login-card {
+    justify-content: center;
+    .logo-box {
+      padding: 120px 0 50px 0;
+    }
+  }
+.login_outer{
+    width: 600px;
+    max-width: 100%;
+    padding-left:0px !important;
+    padding-right:0px !important;
+    @media screen and (min-width: 568px) {
+        // min-width:700px;
+        // padding: 30px 19px;
+      }
+    @media screen and (min-width: 768px) {
+        min-width:650px;
+        // padding: 30px 19px;
+      }
+}
+  .login-form-box {
+    padding: 80px;
+    background: #0b2a42 !important;
+    color: #fff !important;
+    border-radius: 12px !important;
+    position: relative !important;
+    z-index: 1 !important;
+
+    @media screen and (max-width: 568px) {
+      padding: 80px 40px;
+    }
+
+    .title {
+      font-family: "Titillium Web" !important;
+      font-style: normal !important;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 37px;
+    }
+
+    .subtitle {
+      font-family: "Titillium Web" !important;
+      font-style: normal !important;
+      font-weight: 400 !important;
+      font-size: 17px;
+      line-height: 26px;
+      color: rgba(255, 255, 255, 0.6) !important;
+    }
+
+    .form-fields {
+      margin-top: 2rem;
+
+      .checkbox_outer {
+        display: flex;
+        justify-content: space-between !important;
+      }
+    }
+
+    .dark-checkbox {
+      .check-box-white input:checked ~ .checkmark_product:after {
+        display: block;
+        border: 1px solid $primary-dark-color !important;
+        border-width: 0 3px 3px 0;
+      }
+    }
+
+    .login-button-outer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .loginSubmitBtn {
+        gap: 15px;
+        flex: 1;
+        .loginSubmitBtnInfo {
+          flex: 1;
+        }
+      }
+    }
+  }
+
+  .left_top_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  .right_bottom_img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  .bottom_shadow {
+    padding: 30px 0;
+    text-align: center;
+    mix-blend-mode: multiply;
+    @media screen and (max-width: 699px) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.search-bar-autocompletes {
+  position: relative;
+  background-color: #fff;
+  border-radius: 15px 15px 15px 15px;
+
+  .MuiInputBase-root.MuiInput-root::after {
+    border-bottom: 1px solid #E2E2E2 !important;
+  }
+
+  .MuiInputBase-root.MuiInput-root:hover:not(.Mui-disabled)::before {
+    border-bottom: 1px solid #E2E2E2 !important;
+  }
+
+  .MuiInputBase-root-MuiInput-root {
+    border-bottom: 1px solid #E2E2E2 !important;
+  }
+
+  .MuiInput-input {
+    padding: 4px 4px 4px 30px !important;
+  }
+
+  .search-bar-btn {
+    position: absolute;
+    right: 8px;
+    bottom: 2px;
+    pointer-events: none;
+  }
+  .MuiInputBase-root.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid #00ACBA !important;
+    border-radius: 8px 8px 0px 0px;
+  }
+  
+  .MuiOutlinedInput-notchedOutline {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid #00ACBA !important;
+    border-radius: 8px 8px 0px 0px;
+  }
+  
+  
+  .MuiAutocomplete-endAdornment {
+    position: absolute;
+    right: -14px;
+    top: calc(50% - 21px) !important;
+  }
+}
+

@@ -1,0 +1,369 @@
+.main-content-wrap {
+  padding: 10px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 0px 100px -20px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 9;
+
+  .contact_profile {
+    border: 1px solid $primary-color;
+    border-radius: 8px;
+    padding: 30px 30px 60px 30px;
+    margin: 35px 0;
+
+    @media only screen and (max-width: 1199px) {
+      padding: 0px 5px;
+    }
+
+    .Contact_img {
+      margin-bottom: 90px;
+
+      @media only screen and (max-width: 1199px) {
+        padding: 20px 0;
+        margin-bottom: 40px;
+      }
+    }
+
+    .details_border {
+      padding: 0px 40px;
+      border-right: 2px dashed $primary-color;
+
+      @media only screen and (max-width: 1199px) {
+        border-bottom: 2px dashed $primary-color;
+        padding-bottom: 30px;
+        border-right: none;
+        padding-left: 0px;
+        margin: 0px 30px;
+      }
+
+      .contact_det {
+        padding-top: 19px;
+        display: flex;
+        align-items: center;
+
+        .contact_grid {
+          @media only screen and (max-width: 899px) {
+            padding-top: 10px;
+            margin-top: 0;
+          }
+        }
+      }
+
+      .contact_grid_office {
+        @media only screen and (max-width: 899px) {
+          margin-top: 0;
+        }
+      }
+
+      .personal_details {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        display: inline-block;
+      }
+
+      .contact_grid_border {
+        border: 1px solid $primary-color;
+      }
+    }
+
+    .payment_prescriber {
+      padding-left: 50px;
+    }
+
+    @media only screen and (max-width: 1199px) {
+      .payment {
+        padding: 40px 0 !important;
+      }
+
+      .payment_prescriber {
+        padding: 40px 30px !important
+      }
+    }
+
+    .office {
+      font-family: "Titillium Web";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px !important;
+      line-height: 33px;
+      text-transform: capitalize;
+      color: #676464;
+
+      @media only screen and (max-width: 768px) {
+        font-size: 20px !important;
+      }
+    }
+
+    .office_span {
+      font-family: "Titillium Web";
+      font-weight: 400;
+      font-size: 20px;
+      text-transform: capitalize;
+      color: #676464;
+      display: inline-block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media only screen and (max-width: 768px) {
+        font-size: 17px !important;
+      }
+    }
+  }
+
+  .payment {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (max-width: 1199px) {
+      padding: 80px 0 !important;
+    }
+
+    @media only screen and (max-width: 568px) {
+      padding: 50px 0 !important;
+      align-items: flex-start;
+    }
+
+    .personal_details {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      display: inline-block;
+    }
+
+    .exeasting {
+      border: none !important;
+      margin-top: 22px !important;
+      margin-left: 0px !important;
+
+      .add_new_cart {
+        margin-top: 10px !important;
+
+        .edit_btn {
+          width: 200px !important;
+        }
+      }
+    }
+  }
+
+  .back_patient {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+
+    .patient_list {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center;
+
+      span {
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+      }
+
+      p {
+        margin: 0;
+        font-family: "Titillium Web";
+        font-weight: 600;
+        font-size: 20px;
+        color: $primary-color;
+
+        @media only screen and (max-width: 568px) {
+          font-size: 18px;
+          margin: 10px 0;
+        }
+      }
+    }
+
+    .patient_head {
+      @media only screen and (max-width: 865px) {
+        width: 100%;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        @media only screen and (max-width: 795px) {
+          padding: 0;
+          width: 100%;
+        }
+
+        li {
+          @media only screen and (max-width: 568px) {
+            width: 100%;
+          }
+
+          .contact_btn {
+            height: 49px;
+            width: 212px;
+
+            @media only screen and (max-width: 568px) {
+              width: 100%;
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .recents-order-table-patient {
+    padding: 80px 0;
+
+    @media only screen and (max-width: 568px) {
+      padding: 20px 0;
+    }
+  }
+}
+
+.recent-order-table-layout {
+  table {
+    thead {
+      th {
+        text-align: center;
+      }
+    }
+
+    tbody {
+      td {
+        text-align: center;
+        border: none;
+      }
+
+      .table_first {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.contact_profile {
+  .details_box {
+    .contact {
+      width: 100%;
+      padding-top: 15px;
+
+      @media only screen and (max-width: 850px) {
+        flex-direction: column;
+        // margin: 20px 0;
+      }
+
+      .contact_outer {
+        @media only screen and (max-width: 850px) {
+          flex-wrap: wrap !important;
+          gap: 15px !important;
+        }
+      }
+
+      .contact_side {
+        width: 40%;
+        font-family: "Titillium Web";
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: capitalize;
+        color: #676464;
+
+        @media only screen and (max-width: 850px) {
+          width: 100%;
+        }
+
+        @media only screen and (max-width: 568px) {
+          font-size: 18px;
+        }
+      }
+
+      .alignment {
+        @media only screen and (max-width: 850px) {
+          padding-top: 15px;
+          width: 100% !important;
+          // flex-wrap: wrap !important;
+          // gap: 15px !important; 
+        }
+      }
+
+      .info_contact {
+        width: 35%;
+        padding: 6px 10px;
+        // margin: 15px;
+        font-family: "Titillium Web";
+        font-weight: 400;
+        font-size: 16px;
+        color: #676464;
+
+        @media only screen and (max-width: 850px) {
+          width: 100%;
+          margin: 8px 15px;
+        }
+
+        @media only screen and (max-width: 568px) {
+          font-size: 15px;
+        }
+      }
+
+      .info_contact_border {
+        border: 1px solid $primary-color;
+
+        @media only screen and (max-width: 400px) {
+          border: none;
+        }
+      }
+
+      .info_contact_border_email {
+        padding: 0 15px;
+        overflow-x: auto;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+          width: 8px;
+        }
+
+        &::-webkit-scrollbar-track {
+          background: #fff;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: #fafafa;
+          border-radius: 30px;
+        }
+      }
+
+      .long {
+        width: 50%;
+
+        @media only screen and (max-width: 850px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.css-19r6kue-MuiContainer-root {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+
+  @media screen and (max-width:669px) {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
+.top_alignment {
+  width: 100%;
+}

@@ -1,0 +1,125 @@
+.signup-page {
+
+  .logo {
+    cursor: pointer;
+  }
+
+  .head {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 568px) {
+      padding: 9px 8px 3px;
+    }
+
+    .menu {
+      color: #fff;
+      font-weight: 400;
+      font-size: 20px;
+
+      @media screen and (max-width: 568px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .heading {
+    font-weight: 600;
+    font-size: 35px;
+    color: #fff;
+    // padding-bottom: 15px;
+
+    @media screen and (max-width: 568px) {
+      font-size: 30px;
+      padding-top: 20px;
+    }
+  }
+
+  .main-box {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 100px -20px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    padding: 30px 70px;
+    overflow-y: auto;
+    z-index: 999;
+    position: relative;
+
+    @media only screen and (max-width: 568px) {
+      padding: 30px 25px;
+    }
+
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #fff;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #fafafa;
+      border-radius: 30px;
+    }
+
+
+    .about {
+      font-family: "Titillium Web";
+      font-weight: 700;
+      font-size: 24px;
+      margin: 30px 0;
+      color: #263238;
+    }
+
+    .info {
+      font-family: "Titillium Web";
+      font-weight: 600;
+      font-size: 22px;
+      color: #263238;
+    }
+
+    .info-small {
+      margin: 0;
+      font-weight: normal;
+      font-size: 15px;
+      color: #959595;
+    }
+
+    .divider {
+      border: 1.5px solid #f1f1f1;
+      margin: 30px 0;
+    }
+
+    .shipping_info {
+      font-family: "Titillium Web";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+      color: rgba(38, 50, 56, 0.54);
+    }
+
+    // forms
+    .for_small_screen {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+
+      @media screen and (max-width: 1024px) {
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  .mandatory {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: #263238;
+
+    span {
+      color: $primary-color;
+    }
+  }
+}

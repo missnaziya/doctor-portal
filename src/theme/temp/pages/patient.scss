@@ -1,0 +1,280 @@
+.patient-page {
+  .head {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 568px) {
+      padding: 9px 8px 3px;
+    }
+
+    .menu {
+      color: #fff;
+      font-weight: 400;
+      font-size: 20px;
+
+      @media screen and (max-width: 568px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .heading {
+    font-weight: 600;
+    font-size: 35px;
+    color: #fff;
+    padding-bottom: 15px;
+
+    @media screen and (max-width: 568px) {
+      font-size: 30px;
+      padding-top: 20px;
+    }
+  }
+
+  .current_patient_main {
+    min-height: 80vh !important;
+  }
+
+  .main-box {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 100px -20px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    overflow-y: auto;
+    z-index: 999;
+    position: relative;
+    margin-bottom: 40px;
+    padding-top: 100px !important;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #fff;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #fafafa;
+      border-radius: 30px;
+    }
+
+    .heading_top {
+      font-family: 'Titillium Web';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      text-align: center;
+      color: #263238;
+      padding-bottom: 50px;
+    }
+
+    .add_btn_out {
+      margin-bottom: 30px;
+      // text-align: right;
+      display: flex;
+      justify-content: flex-end;
+
+      .add_btn {
+        background: #00acba;
+        border: 2px solid #00acba;
+        border-radius: 8px;
+        height: 48px;
+        width: 200px;
+        font-family: 'Titillium Web';
+        font-weight: 600;
+        font-size: 19px;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        @media only screen and (max-width: 568px) {
+          height: 40px;
+          width: 100%;
+          font-weight: 600;
+          font-size: 16px;
+        }
+
+        span {
+          display: inline-block;
+          width: 30px;
+        }
+      }
+    }
+
+    .table_customized {
+      margin-top: 20px;
+
+      &::-webkit-scrollbar {
+        height: 2px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #fff;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #fafafa;
+        border-radius: 30px;
+      }
+
+      .table_profile_image {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        background-color: #d9d9d9;
+        border-radius: 50%;
+        margin-right: 20px;
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 27px;
+        text-transform: capitalize;
+        color: #676464;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .table_head th {
+        background: #f2fbfc;
+        color: #676464;
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        border: 0;
+        text-align: center !important;
+        border: none;
+      }
+
+      .table_body {
+        tr {
+          td {
+            border-bottom: none !important;
+            color: #676464 !important;
+            white-space: nowrap !important;
+            text-align: center;
+            font-size: 17px;
+            border: none;
+          }
+
+          &:nth-of-type(2n + 1) {
+            background-color: #fff !important;
+          }
+        }
+
+        .table_first {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+
+      .back_patient {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .searh-patient-inputfield {
+      position: relative;
+
+      label {
+        color: #c1c1c1;
+        left: 15px;
+        top: -19px;
+      }
+
+      label[data-shrink='true'] {
+        color: #fff;
+      }
+
+      input {
+        padding-left: 15px;
+      }
+
+      .MuiInput-input {
+        padding-left: 15px;
+        padding-top: 0px;
+        padding-bottom: 10px;
+        padding-right: 0px;
+      }
+
+      .MuiAutocomplete-clearIndicator {
+        margin-right: 8px;
+      }
+
+      .MuiAutocomplete-popupIndicator {
+        opacity: 0;
+      }
+
+      .MuiInputBase-root-MuiInput-root {
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid #00acba;
+        border-radius: 8px 8px 0px 0px;
+        margin: 12px 0px;
+      }
+
+      .MuiInput-root {
+        margin-top: 0px !important;
+      }
+
+      .MuiInput-root:before {
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid #00acba;
+        border-radius: 8px 8px 0px 0px;
+        padding: 12px 0px;
+      }
+
+      .MuiInputBase-colorPrimary::after,
+      .MuiInputBase-colorPrimary.Mui-focused::after {
+        border-color: $primary-color;
+      }
+
+      .search-inputfield-btn {
+        position: absolute;
+        right: 8px;
+        bottom: 10px;
+        pointer-events: none;
+      }
+    }
+
+    .back_patient {
+      .patient_head {
+        ul {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          gap: 15px;
+
+          @media only screen and (max-width: 921px) {
+            // padding-left: 0;
+          }
+
+          li {
+            .contact_btn {
+              height: 49px;
+              width: 212px;
+
+              @media only screen and (max-width: 568) {
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media only screen and (min-width: 992px) {
+      padding: 30px 48px;
+      margin-bottom: 0px !important;
+    }
+
+    @media only screen and (min-width: 1200px) {
+      padding: 30px 100px;
+      margin-bottom: 0px !important;
+    }
+  }
+}
+.plusIcon {
+  cursor: pointer;
+}

@@ -1,0 +1,764 @@
+.dashboard-page {
+  h5.same-typography-final {
+    color: #7a7e81;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+
+    @media only screen and (max-width: 568px) {
+      font-size: 16px;
+    }
+
+    @media only screen and (min-width: 1200px) and (max-width: 1440px) {
+      font-size: 14px;
+    }
+  }
+
+  .main-content-wrap {
+    padding: 10px;
+    background: #f7f7f7;
+    border-radius: 12px;
+    box-shadow: 0px 0px 100px -20px rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 9;
+
+    @media only screen and (max-width: 991px) {
+      padding: 7px 7px 20px;
+      margin-bottom: 15px;
+    }
+
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #fff;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #fafafa;
+      border-radius: 30px;
+    }
+
+    .dashboard_col_layout {
+      display: flex;
+      flex-direction: column;
+
+      .dashboardFlex {
+        flex: 1;
+      }
+    }
+
+    #dashboard_set {
+      @media only screen and (max-width: 1400px) {
+        flex-direction: column !important;
+      }
+    }
+
+    .view-all-link {
+      a {
+        color: rgba(38, 50, 56, 0.33);
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: capitalize;
+      }
+    }
+
+    .card-sample-block {
+      padding: 20px 10px;
+      border-radius: 12px;
+      background: #fff;
+      height: 100%;
+      width: 100%;
+
+      .doctor_profile {
+        display: flex;
+        align-items: center;
+        // flex-direction: column;
+        justify-content: center;
+        padding-top: 35px;
+        padding-bottom: 35px;
+
+        @media only screen and (max-width: 568px) {
+          flex-direction: column;
+        }
+
+        .card-user-profile {
+          position: relative;
+          padding-top: 100%;
+          width: 135px;
+          height: 135px;
+          background-color: #f7f7f7;
+          background-image: url('../../assets/icons/dummy_user.png');
+
+          .dashboard_camera {
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            border-radius: 50%;
+            cursor: pointer;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+          }
+
+          @media only screen and (min-width: 1200px) and (max-width: 1440px) {
+            width: 100px;
+            height: 100%;
+          }
+
+          &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-image: url('../../assets/icons/profile-bdr.svg');
+          }
+        }
+
+        .card-user-profile,
+        .card-user-profile::before {
+          background-position: center !important;
+          background-repeat: no-repeat !important;
+          background-size: contain !important;
+          border-radius: 50%;
+          object-fit: contain;
+        }
+
+        .card-user-desc {
+          padding-left: 20px;
+          width: 100%;
+          .user_heading {
+            // word-break: break-all;
+            height: 65px;
+            overflow: hidden;
+          }
+          p {
+            color: #7a7e81;
+            // word-break: break-all;
+            // height: 70px;
+            overflow: hidden;
+            span {
+              font-weight: 600;
+            }
+          }
+
+          .small {
+            font-size: 13px;
+          }
+
+          .product-tour {
+            display: inline;
+            font-size: 18px;
+            font-weight: 400;
+            cursor: pointer;
+            color: #00acba;
+            text-decoration: underline;
+          }
+
+          .select-prescriber {
+            display: inline;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            color: #00acba;
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .card_sample_in {
+        height: 100% !important;
+
+        @media only screen and (max-width: 991px) {
+          flex-direction: column !important;
+        }
+      }
+
+      .most-used-block {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        .most-used-heading {
+          img {
+            position: relative;
+            top: 2px;
+          }
+
+          h4 {
+            font-family: 'Titillium Web';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 43px;
+            color: rgba(38, 50, 56, 0.8);
+            text-transform: capitalize;
+            white-space: nowrap;
+            text-align: center;
+            line-height: 1;
+          }
+        }
+
+        .most-used-products {
+          .most-used-pdt-list {
+            padding-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            cursor: pointer;
+            .product-short-img-block {
+              // margin-right: 10px;
+
+              width: 140px !important;
+              height: 140px;
+              background-color: #f0f0f0 !important;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 8px;
+              height: 140px !important;
+              border-radius: 70px;
+              .product-short-img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                img {
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 50%;
+                  object-fit: contain;
+                }
+                // padding-top: 100%;
+                // width: 100%;
+                // // border-radius: 50%;
+                // background-color: #f0f0f0 !important;
+                // background-image: url('../../assets/icons/Klarity Drops.svg');
+                // background-position: center !important;
+                // background-repeat: no-repeat !important;
+                // background-size: cover !important;
+              }
+
+              h5 {
+                @media only screen and (max-width: 991px) {
+                  font-size: 12px;
+                }
+              }
+            }
+
+            .order-used-btn {
+              // margin: 10px 0px;
+
+              button {
+                border-radius: 8px;
+                background-color: #f3893d;
+              }
+            }
+          }
+
+          .view-all-link {
+            padding-top: 6px;
+            text-align: right;
+
+            a {
+              color: rgba(38, 50, 56, 0.33);
+              font-size: 15px;
+              font-weight: 600;
+              line-height: 27px;
+              text-transform: capitalize;
+              font-size: 14px;
+              font-style: italic;
+              white-space: nowrap;
+
+              @media only screen and (max-width: 568px) {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+
+      .divider-full-line {
+        position: relative;
+        top: 20px;
+        height: 190px;
+        width: 1.5px;
+        margin-inline: 15px;
+        background-color: rgba(38, 50, 56, 0.16);
+
+        @media only screen and (max-width: 991px) {
+          display: none;
+        }
+      }
+
+      .used-products-spotlight {
+        .most-used-heading {
+          h3 {
+            text-align: center;
+            margin-left: 0;
+          }
+
+          .search_patient_btn {
+            padding-top: 40px;
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+
+            button {
+              @media only screen and (max-width: 991px) {
+                margin: 15px 0;
+              }
+            }
+
+            @media only screen and (max-width: 991px) {
+              flex-direction: column;
+              justify-content: center;
+              padding-top: 0px;
+              margin-top: 6px;
+            }
+          }
+        }
+
+        .most-used-products {
+          .most-used-pdt-list {
+            .product-short-img-block {
+              margin-right: 0;
+
+              // .product-short-img {
+              //   width: 90px;
+
+              //   @media only screen and (min-width: 1200px) and (max-width: 1300px) {
+              //     width: 75px !important;
+              //   }
+              // }
+            }
+
+            h5.same-typography-final {
+              margin-top: 5px;
+              text-decoration: underline;
+            }
+
+            .product_spotlight {
+              gap: 10px;
+
+              @media only screen and (max-width: 1200px) {
+                flex-wrap: wrap;
+              }
+            }
+          }
+
+          .view-all-link {
+            text-align: center;
+
+            a {
+              color: $primary-color !important;
+              font-size: 15px;
+              font-style: italic;
+              text-decoration: underline !important;
+            }
+          }
+        }
+
+        .searh-patient-inputfield {
+          position: relative;
+          padding-top: 1.5rem;
+
+          label {
+            left: 15px;
+          }
+
+          label[data-shrink='true'] {
+            color: $primary-color;
+          }
+
+          input {
+            padding-left: 15px;
+          }
+
+          .MuiAutocomplete-clearIndicator {
+            margin-right: 8px;
+          }
+
+          .MuiAutocomplete-popupIndicator {
+            opacity: 0;
+          }
+
+          .MuiInputBase-colorPrimary::after,
+          .MuiInputBase-colorPrimary.Mui-focused::after {
+            border-color: $primary-color;
+          }
+
+          .search-inputfield-btn {
+            position: absolute;
+            right: 8px;
+            bottom: 10px;
+            pointer-events: none;
+          }
+        }
+      }
+
+      .card-sample-counting {
+        h1 {
+          color: #f3893d;
+          font-size: 65px;
+          font-weight: 600;
+          line-height: 1;
+          cursor: pointer;
+        }
+
+        h4 {
+          color: #263238;
+          font-size: 20px;
+          font-weight: 400;
+          text-transform: capitalize;
+          cursor: pointer;
+        }
+
+        &.prescriptions-counting {
+          h1 {
+            color: $primary-color;
+          }
+        }
+
+        &.patients-counting {
+          margin-top: -10px;
+        }
+      }
+
+      .card-counting-divider {
+        margin: 15px 0 8px;
+        border: 1px dashed $primary-color;
+      }
+
+      .exclusive-product-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        // .exclusive-product-slide-img {
+        .product-slide-img {
+          width: 210px;
+          padding-top: 250px;
+          background-image: url('../../assets/medicineBottle.svg');
+          background-repeat: no-repeat !important;
+          background-size: cover !important;
+          background-position: center !important;
+        }
+        .product-slide-img1 {
+          width: auto;
+          padding-top: 185px;
+          background-image: url('../../assets/icons/product_1.svg');
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+        .product-slide-img2 {
+          width: auto;
+          padding-top: 185px;
+          background-image: url('../../assets/icons/product_2.svg');
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+        // }
+
+        .exclusive-product-slide-desc {
+          text-align: center;
+
+          .exclusive-name-tag {
+            display: inline-block;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 2px 22px;
+            border-radius: 0px 8px;
+            background-color: $primary-color;
+            white-space: nowrap;
+          }
+
+          .exclusive-name-tag,
+          h3 {
+            text-transform: capitalize;
+          }
+
+          h3 {
+            color: #515b60;
+            font-size: 14px;
+            line-height: 22px;
+            margin-top: 8px;
+            margin: 0;
+            text-align: left;
+
+            span {
+              display: block;
+              color: #263238;
+              font-weight: 600;
+            }
+
+            span.name-highlight {
+              font-family: 'Titillium Web';
+              font-weight: 700;
+              font-size: 22px;
+              text-transform: capitalize;
+              color: #515b60;
+              margin: 10px 0;
+            }
+          }
+          .sliderDescription {
+            color: #515b60;
+            font-size: 14px;
+            line-height: 15px;
+            margin-top: 8px;
+            margin: 0;
+            text-align: left;
+
+            span {
+              display: block;
+              color: #263238;
+              font-weight: 600;
+            }
+
+            span.name-highlight {
+              font-family: 'Titillium Web';
+              font-weight: 700;
+              font-size: 22px;
+              text-transform: capitalize;
+              color: #515b60;
+              margin: 10px 0;
+            }
+          }
+
+          p {
+            color: #263238;
+            font-size: 14px;
+            font-weight: 400;
+            font-style: italic;
+            margin-bottom: 5px;
+            text-align: left;
+
+            span {
+              display: block;
+              color: $primary-color;
+              font-weight: 600;
+              font-style: normal;
+            }
+          }
+
+          .order-used-btn {
+            margin: 10px 0px;
+            padding-top: 12px;
+          }
+
+          ul {
+            list-style: none;
+            text-align: left;
+            padding-left: 0;
+            margin: 0;
+
+            li {
+              font-family: 'Titillium Web';
+              font-weight: 600;
+              font-size: 10px;
+              text-transform: capitalize;
+              color: rgba(38, 50, 56, 0.7);
+
+              span {
+                color: #00acba;
+              }
+            }
+          }
+        }
+      }
+
+      &.statics-ratio-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media only screen and (min-width: 1224px) and (max-width: 1272px) {
+          padding: 16px 0px;
+        }
+
+        .stack-card-sample {
+          gap: 10px;
+          // @media only screen and (min-width:1224px) and (max-width: 1272px) {
+          //   flex-direction: column;
+          // }
+
+          .card-counting-divider {
+            // @media only screen and (min-width:1224px) and (max-width: 1272px) {
+            //   display: none;
+            // }
+          }
+
+          .patients-counting {
+            h1 {
+              font-size: 40px;
+            }
+            h4 {
+              font-size: 20px;
+            }
+          }
+        }
+
+        .card-sample-counting {
+          display: flex;
+          flex-direction: column;
+
+          h1,
+          h4 {
+            color: #676f74;
+          }
+
+          h1 {
+            font-size: 30px;
+            line-height: 32px;
+            flex: 1;
+          }
+
+          h4 {
+            font-size: 20px;
+            font-weight: 600;
+          }
+
+          &.patients-counting {
+            margin-top: 0;
+          }
+        }
+
+        .card-counting-divider {
+          margin: 15px 0 0;
+          height: 55px;
+        }
+      }
+
+      .important_message {
+        color: #f3893d;
+        background-color: inherit;
+      }
+
+      .start_prescription_btn_container {
+        background-color: #f7f7f7;
+      }
+
+      .most_recent_prescription_container {
+        background-color: #f7f7f7;
+      }
+
+      .start_prescription_btn {
+        // padding-top: 45px;
+        // padding-bottom: 44px;
+        height: 80%;
+        align-items: center;
+        justify-content: center;
+
+        @media only screen and (max-width: 899px) {
+          flex-direction: column;
+          padding: 20px 0;
+        }
+
+        button {
+          font-size: 16px;
+          padding: 10px 15px;
+
+          @media only screen and (max-width: 1500px) {
+            white-space: nowrap;
+            font-size: 15px !important;
+          }
+
+          @media only screen and (max-width: 1368px) {
+            flex-direction: column;
+            margin-left: 0;
+            margin-top: 15px;
+          }
+        }
+      }
+
+      .view_all_info {
+        font-family: 'Titillium Web';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 26px;
+        text-decoration-line: underline;
+        text-transform: capitalize;
+        color: rgba(38, 50, 56, 0.33);
+      }
+
+      .recent-order-table-layout {
+        table {
+          thead {
+            th {
+              text-align: center;
+              border: none;
+            }
+          }
+
+          tbody {
+            td {
+              text-align: center;
+            }
+
+            .table_first {
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+    .card-sample-block-flex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      .right_arrow {
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .left_arrow {
+        position: absolute;
+        left: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+.order-used-btn {
+  margin-top: 5px;
+  // margin: 10px 0px;
+}
+.carasouselAlignment {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+  .cardAlign {
+    padding-bottom: 0px !important;
+  }
+  //  .css-ktslay-MuiButtonBase-root-MuiIconButton-root:hover {
+  //   // background-color: rgba(0, 0, 0, 0.04);
+  //   background-color: #7a7e81;
+  // }
+  //  .css-ktslay-MuiButtonBase-root-MuiIconButton-root:hover {
+  //   // background-color: rgba(0, 0, 0, 0.04);
+  //   background-color: #7a7e81;
+  // }
+}

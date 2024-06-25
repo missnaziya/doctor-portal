@@ -1,0 +1,154 @@
+.table_customizedrx {
+  margin-top: 20px;
+  min-height: 100px;
+}
+
+.table_customizedrx_Items {
+  margin-top: 20px;
+  min-height: 320px;
+}
+
+.table_customized_dasboard {
+  margin-top: 20px;
+  min-height: 215px;
+}
+
+.table_customized_Prescription {
+  margin-top: 20px;
+  height: 100% !important;
+}
+.table_customized_PrescriptionSearchbar {
+  margin-top: 0px;
+  height: 100% !important;
+}
+
+th,
+td {
+  color: #676464 !important;
+  font-weight: 400 !important;
+  font-family: 'Titillium Web';
+  font-size: 15px !important;
+  line-height: 27px;
+  text-transform: capitalize;
+  // white-space: nowrap;
+  border: none;
+}
+
+thead {
+  tr {
+    th {
+      padding-block: 12px;
+      background-color: #f2fbfc !important;
+      border: none;
+      white-space: nowrap;
+      font-family: 'Titillium Web';
+      font-style: normal;
+      font-weight: 600 !important;
+      font-size: 17px !important;
+      line-height: 33px;
+      text-transform: capitalize;
+      color: #676464;
+    }
+  }
+}
+
+.table_body_prescriber_order {
+  min-height: 300px;
+
+  tr {
+    td {
+      padding: 10px 10px !important;
+      color: #676464 !important;
+      font-weight: 400 !important;
+      font-family: 'Titillium Web';
+      font-size: 15px !important;
+      line-height: 27px;
+      text-transform: capitalize;
+      // white-space: nowrap;
+      width: 200px !important;
+      // word-break: break-all !important;
+      border: none;
+
+      @media only screen and (max-width: 1024px) {
+        font-size: 16px !important;
+      }
+    }
+
+    &:nth-of-type(2n + 1) {
+      background-color: #fff;
+    }
+  }
+}
+.table_body {
+  min-height: 300px;
+
+  tr {
+    td {
+      padding: 10px 10px !important;
+      color: #676464 !important;
+      font-weight: 400 !important;
+      font-family: 'Titillium Web';
+      font-size: 15px !important;
+      line-height: 27px;
+      text-transform: capitalize;
+      white-space: nowrap;
+      border: none;
+      
+      @media only screen and (max-width: 1024px) {
+        font-size: 16px !important;
+      }
+   
+    }
+   
+    &:nth-of-type(2n + 1) {
+      background-color: #fff;
+    }
+  }
+}
+.table_bodyData {
+  border-radius: 0px 0px 15px 15px;
+  tr {
+    td {
+      padding: 10px 10px !important;
+      color: #676464 !important;
+      font-weight: 400 !important;
+      font-family: 'Titillium Web';
+      font-size: 15px !important;
+      line-height: 27px;
+      text-transform: capitalize;
+      white-space: nowrap;
+      border: none;
+
+      @media only screen and (max-width: 1024px) {
+        font-size: 16px !important;
+      }
+      &:focus {
+        padding: 0px !important;
+      }
+    }
+
+    &:nth-of-type(2n + 1) {
+      background-color: #fff;
+    }
+  }
+}
+
+.table_profile_image {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: #676464;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  margin-right: 12px;
+}
+.MuiTableCell-root:focus {
+  padding: 0px !important;
+}

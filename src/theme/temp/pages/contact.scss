@@ -1,0 +1,131 @@
+.signup-page {
+    .main-box {
+        .heading_top {
+            font-family: 'Titillium Web';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            text-align: center;
+            color: #263238;
+            padding-bottom: 30px;
+        }
+
+        .add_btn_out {
+            margin-bottom: 30px;
+            text-align: right;
+cursor: pointer;
+            .add_btn {
+                background: none;
+                border: 2px solid #00ACBA;
+                border-radius: 8px;
+                height: 48px;
+                width: 200px;
+                font-family: 'Titillium Web';
+                font-weight: 600;
+                font-size: 19px;
+                color: #00ACBA;
+
+
+
+                span {
+                    display: inline-block;
+                    width: 30px;
+                }
+            }
+        }
+
+        .back_patient {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+
+            .patient_list {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                padding-bottom: 20px;
+
+                p {
+                    font-family: 'Titillium Web';
+                    font-weight: 500;
+                    font-size: 22px;
+                    color: #8F9598;
+                    margin: 0;
+                }
+
+                span {
+                    display: inline-block;
+                    height: 26px;
+                    width: 38px;
+                    background-color: #F3F3F3;
+                    padding: 0 20px;
+                    border-radius: 30px;
+                    margin-right: 10px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            .add_btn_out {
+                margin: 0;
+
+                ul {
+                    list-style: none;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    gap: 15px;
+                    margin: 0;
+
+                    li {
+                        .backchange_btn {
+                            background-color: #00ACBA;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact_profile {
+            border: 1px solid #00ACBA;
+            border-radius: 8px;
+            padding: 30px;
+
+            h1 {
+                font-family: 'Titillium Web';
+                font-weight: 400;
+                font-size: 24px;
+                color: #676464;
+            }
+
+            .details_box {
+                padding-top: 35px;
+
+                .inputs_out {
+                    font-family: 'Titillium Web';
+                    font-weight: 600;
+                    font-size: 22px;
+                    color: #676464;
+                    // margin: 20px 0;
+
+                    span {
+                        font-family: 'Titillium Web';
+                        font-weight: 400;
+                        font-size: 20px;
+                        color: #676464;
+                    }
+
+                    @media only screen and (max-width: 1024px) {
+                        padding-bottom: 15px !important;
+                    }
+                }
+            }
+        }
+    }
+}

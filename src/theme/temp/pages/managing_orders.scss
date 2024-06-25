@@ -1,0 +1,24 @@
+.signup-page {
+    .main-box {
+        .table_container_wrap {
+            white-space: nowrap;
+
+            .table_body {
+                tr {
+                    td {
+                        border-bottom: none !important;
+                        color: #676464 !important;
+                        white-space: nowrap !important;
+                        text-align: center;
+                        font-size: 17px;
+                        border: none;
+                    }
+
+                    &:nth-of-type(2n+1) {
+                        background-color: #fff !important;
+                    }
+                }
+            }
+        }
+    }
+}

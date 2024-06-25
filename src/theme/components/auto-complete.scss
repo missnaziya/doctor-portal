@@ -1,0 +1,13 @@
+.google-auto-complete-container {
+    & > div > div {
+        border-radius: 8px;
+        border-color: #616161;
+
+        &:hover {
+            border-color: $primary-color !important;
+        }
+    }
+    #react-select-2-input {
+        height: 44px;
+    }
+}

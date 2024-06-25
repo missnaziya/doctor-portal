@@ -1,0 +1,30 @@
+version: 0.2
+# specify env variables required to build the application
+env:
+  # environment variables are kept in parameter store on aws
+  parameter-store:
+    REACT_APP_ENV_NAME: /DOCTOR_PORTAL/DEV/REACT_APP_ENV_NAME
+    REACT_APP_GRX_BASE_URL: /DOCTOR_PORTAL/DEV/REACT_APP_GRX_BASE_URL
+    CLOUDFRONT_DISTRIBUTION_ID: /DOCTOR_PORTAL/DEV/CLOUDFRONT_DISTRIBUTION_ID
+phases:
+  install:
+    runtime-versions:
+      nodejs: 16
+    commands:
+      - npm install -g turbo # Install Turbo Repo globally
+      - yarn prune:dp # generate doctor-portal project from the monorepo
+      - cd out/full/apps/doctor-portal # navigate to the folder for the project
+      - yarn install # install dependencies
+  build:
+    commands:
+      - yarn build # build project
+  post_build:
+    commands:
+      # invalidate the cloudfront cache after the build
+      - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
+artifacts:
+  files:
+    - '**/**'
+  name: $(date +%Y-%m-%d)
+  # deploy the build folder to s3
+  base-directory: out/full/apps/doctor-portal/build

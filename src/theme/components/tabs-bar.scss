@@ -1,0 +1,27 @@
+.tabs-bar {
+  background-color: #fff !important;
+  background: #fff !important;
+  box-shadow: none !important;
+
+  .tab-btn {
+    font-family: "Titillium Web";
+    font-weight: 700;
+    font-size: 26px;
+    text-transform: capitalize;
+    color: #263238;
+    border-bottom: 1px solid #f0f0f0;
+    opacity: 1 !important;
+
+    @media screen and (max-width: 768px) {
+      font-size: 22px;
+    }
+
+    @media screen and (max-width: 568px) {
+      font-size: 18px;
+    }
+  }
+
+  .MuiTabs-indicator {
+    background-color: $primary-color;
+  }
+}

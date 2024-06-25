@@ -1,0 +1,54 @@
+.main-box {
+  .favorites {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    .favorites_in {
+      background-color: #fff !important;
+    }
+
+    .favorites_out {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f2f2f2;
+      padding: 0px 20px;
+      border-radius: 50px;
+      .item_side {
+        display: flex;
+        align-items: center;
+        font-family: "Titillium Web";
+        font-weight: 600;
+        font-size: 18px;
+        text-transform: capitalize;
+        color: #7a7e81;
+
+        span {
+          display: inline-block;
+          margin-right: 20px;
+          height: 45px;
+          width: 45px;
+          border-radius: 50%;
+          background-color: #f2f2f2;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .favorites {
+          display: flex;
+          align-items: center;
+        }
+      }
+      .order_side {
+        ul {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          gap: 15px;
+        }
+      }
+    }
+  }
+}

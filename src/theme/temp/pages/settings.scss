@@ -1,0 +1,704 @@
+.setting-page {
+  .main-content-wrapper-full {
+    .main-content-wrap {
+      background-color: #fff !important;
+
+      // @media only screen and (max-width: 1199px) {
+      //   .payment {
+      //     padding: 0px 0 !important;
+      //   }
+
+      // }
+
+      .heading_top {
+        font-family: 'Titillium Web';
+        font-weight: 600;
+        font-size: 32px;
+        color: #263238;
+        padding-bottom: 30px;
+        text-align: center;
+
+        @media only screen and (max-width: 600px) {
+          font-size: 26px;
+          text-align: center;
+          padding-bottom: 0;
+        }
+      }
+
+      .signup_header {
+        font-family: 'Titillium Web';
+        font-weight: 700;
+        font-size: 26px !important;
+        text-transform: capitalize;
+        color: #263238;
+
+        @media only screen and (max-width: 868px) {
+          font-size: 20px;
+        }
+
+        @media only screen and (max-width: 500px) {
+          font-size: 17px !important;
+        }
+      }
+
+      .card-user-profile-img {
+        position: relative;
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        background-image: url('../../../assets/icons/dummy_user.png');
+        background-position: center !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        object-fit: contain !important;
+        object-position: center !important;
+
+        .camera {
+          width: 40px;
+          height: 40px;
+          background-color: #fff;
+          border-radius: 50%;
+          cursor:pointer;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+      }
+
+      @media only screen and (max-width: 1199px) {
+        .girlAlignment {
+          padding: 0 !important;
+          margin: 0 !important;
+        }
+      }
+
+      .card-user-girl_img {
+        position: relative;
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        background-image: url('../../../assets/icons/girlProfile.svg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        object-position: center;
+
+        @media only screen and (max-width: 1200px) {
+          margin: 0 auto;
+        }
+
+        .card-user-change {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+        }
+        .card-user-changes {
+          position: absolute;
+          right: 0;
+          top: -5px;
+        }
+        @media only screen and (max-width: 599px) {
+          margin: 0 auto;
+        }
+      }
+
+      .profile {
+        font-family: 'Titillium Web';
+        font-weight: 600;
+        font-size: 28px;
+        color: #263238;
+        padding-top: 20px;
+
+        @media only screen and (max-width: 600px) {
+          font-size: 20px;
+          text-align: center;
+        }
+
+        @media only screen and (max-width: 1200px) {
+          text-align: center;
+        }
+      }
+
+      .personal_details_block {
+        display: block;
+        margin-bottom: 30px;
+        margin-top: 20px;
+      }
+
+      .personal_details {
+        h1 {
+          font-family: 'Titillium Web';
+          font-weight: 600;
+          font-size: 23px;
+          color: rgba(38, 50, 56, 0.8);
+          margin-bottom: 20px;
+        }
+
+        .heading {
+          padding-bottom: 4px;
+          border-bottom: 1px solid #00acba;
+          font-family: 'Titillium Web';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 30px;
+          text-transform: uppercase;
+          color: rgba(38, 50, 56, 0.8);
+        }
+
+        .heading_set_top {
+          margin-top: 40px;
+        }
+
+        .personal_set_top {
+          padding-top: 40px !important;
+        }
+
+        p {
+          // font-family: "Titillium Web";
+          // font-weight: 600;
+          // font-size: 23px;
+          // color: rgba(38, 50, 56, 0.8);
+          // display: flex;
+          // align-items: center;
+
+          @media only screen and (max-width: 600px) {
+            // font-size: 20px;
+            // align-items: center;
+          }
+
+          .profile_icon {
+            display: inline-block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: #00acba;
+            margin-right: 10px;
+          }
+        }
+
+        @media only screen and (max-width: 600px) {
+          font-size: 26px;
+          text-align: center;
+          padding-bottom: 0;
+        }
+
+        .personal {
+          font-family: 'Titillium Web';
+          font-weight: 400;
+          font-size: 20px;
+          color: rgba(38, 50, 56, 0.5);
+          padding-bottom: 10px;
+          display: flex;
+          align-items: center;
+          padding-top: 8px;
+
+          .edit_btn {
+            margin-bottom: 20px;
+
+            span {
+              display: inline-block;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding-right: 10px;
+            }
+
+            @media only screen and (max-width: 599px) {
+              width: 100% !important;
+            }
+          }
+
+          .read_only {
+            input {
+              padding: 0;
+              outline: none;
+
+              &::after {
+                border-bottom: none;
+              }
+            }
+          }
+
+          @media only screen and (max-width: 600px) {
+            font-size: 20px;
+            justify-content: center;
+          }
+        }
+
+        .email_password {
+          .input_image {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-family: 'Titillium Web';
+            font-weight: 400;
+            font-size: 20px;
+            color: rgba(38, 50, 56, 0.5);
+
+            @media only screen and (max-width: 599px) {
+              justify-content: center;
+            }
+
+            .password_change {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              font-size: 20px;
+
+              ul {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                padding-left: 0;
+                gap: 8px;
+
+                li {
+                  .password_dots {
+                    display: inline-block;
+                    height: 10px;
+                    width: 10px;
+                    border-radius: 50%;
+                    background-color: rgba(38, 50, 56, 0.5);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .login_details {
+        .form-input {
+          label {
+            left: 26px !important;
+            top: -2px !important;
+            padding-left: 5px;
+            padding-right: 5px;
+
+            &.MuiInputLabel-shrink {
+              left: 0 !important;
+              top: 0 !important;
+            }
+          }
+
+          input {
+            padding-left: 50px !important;
+          }
+        }
+
+        h1 {
+          font-family: 'Titillium Web' !important;
+          font-weight: 600;
+          font-size: 23px;
+          color: rgba(38, 50, 56, 0.8) !important;
+          margin-bottom: 20px;
+        }
+
+        .heading {
+          padding-bottom: 4px;
+          border-bottom: 1px solid #00acba;
+          font-family: 'Titillium Web';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 30px;
+          text-transform: uppercase;
+          color: rgba(38, 50, 56, 0.8);
+        }
+
+        .heading_set_top {
+          margin-top: 40px;
+        }
+
+        .personal_set_top {
+          padding-top: 40px !important;
+        }
+
+        p {
+          // font-family: "Titillium Web";
+          // font-weight: 600;
+          // font-size: 23px;
+          // color: rgba(38, 50, 56, 0.8);
+          // display: flex;
+          // align-items: center;
+
+          @media only screen and (max-width: 600px) {
+            font-size: 20px;
+            align-items: center;
+          }
+
+          .profile_icon {
+            display: inline-block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: #00acba;
+            margin-right: 10px;
+          }
+        }
+
+        @media only screen and (max-width: 600px) {
+          font-size: 26px;
+          text-align: center;
+          padding-bottom: 0;
+        }
+
+        .personal {
+          font-family: 'Titillium Web';
+          font-weight: 400;
+          font-size: 20px;
+          color: rgba(38, 50, 56, 0.5);
+          padding-bottom: 10px;
+          display: flex;
+          align-items: center;
+          padding-top: 8px;
+
+          .edit_btn {
+            margin-bottom: 20px;
+
+            span {
+              display: inline-block;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding-right: 10px;
+            }
+
+            @media only screen and (max-width: 599px) {
+              width: 100% !important;
+            }
+          }
+
+          .read_only {
+            input {
+              padding: 0;
+              outline: none;
+
+              &::after {
+                border-bottom: none;
+              }
+            }
+          }
+
+          @media only screen and (max-width: 600px) {
+            font-size: 20px;
+            justify-content: center;
+          }
+        }
+
+        .email_password {
+          .input_image {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-family: 'Titillium Web';
+            font-weight: 400;
+            font-size: 20px;
+            color: rgba(38, 50, 56, 0.5);
+
+            @media only screen and (max-width: 599px) {
+              justify-content: center;
+            }
+
+            .password_change {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              font-size: 20px;
+
+              ul {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                padding-left: 0;
+                gap: 8px;
+
+                li {
+                  .password_dots {
+                    display: inline-block;
+                    height: 10px;
+                    width: 10px;
+                    border-radius: 50%;
+                    background-color: rgba(38, 50, 56, 0.5);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .account_devide {
+        height: 2px;
+        background-color: #00acba;
+        margin: 30px 0;
+      }
+
+      .exeasting {
+        border-right: 2px #00acba;
+        border-right-style: dotted;
+        width: 100%;
+        margin-left: 15px;
+
+        @media only screen and (max-width: 500px) {
+          margin-left: 10px;
+        }
+
+        h2 {
+          font-family: 'Titillium Web';
+          font-weight: 600;
+          font-size: 18px;
+          color: rgba(38, 50, 56, 0.7);
+        }
+
+        @media only screen and (max-width: 899px) {
+          border: none;
+        }
+
+        .label {
+          display: flex;
+          align-items: center;
+          color: rgba(38, 50, 56, 0.5);
+          margin: 10px 0;
+          white-space: nowrap;
+
+          @media only screen and (max-width: 568px) {
+            white-space: nowrap;
+            white-space: pre-wrap;
+          }
+
+          span {
+            display: flex;
+            align-items: center;
+            justify-content: baseline;
+          }
+        }
+
+        .radio_grid {
+          label {
+            span {
+              font-style: normal;
+              font-weight: 400 !important;
+              font-size: 16px;
+              line-height: 24px;
+              color: #263238;
+
+              svg {
+                fill: #528097 !important;
+
+                path {
+                  fill: #00acba !important;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .add_new_cart {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        .edit_btn {
+          @media only screen and (max-width: 568px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .heading {
+      padding-bottom: 10px;
+      border-bottom: 1px solid #00acba;
+      display: flex;
+      align-items: center;
+
+      .profile_icon {
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 27px;
+        width: 27px;
+        border-radius: 50%;
+        background-color: #00acba;
+        margin-right: 10px;
+      }
+    }
+
+    .payment {
+      @media only screen and (max-width: 868px) {
+        width: 100%;
+        padding: 20px 0;
+      }
+
+      .gap_top {
+        margin-top: 10px !important;
+        margin-bottom: 12px;
+
+        @media only screen and (max-width: 868px) {
+          margin-top: 40px;
+        }
+
+        @media only screen and (max-width: 568px) {
+          margin-top: 20px;
+        }
+      }
+
+      .setting_billing {
+        @media only screen and (max-width: 568px) {
+          flex-direction: column;
+        }
+
+        .add_new_cart {
+          width: 100%;
+
+          .edit_btn {
+            @media only screen and (max-width: 568px) {
+              width: 100% !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.setting_info {
+  @media only screen and (max-width: 868px) {
+    flex-direction: column !important;
+  }
+}
+
+.settings_main_box {
+  .top_tab_out {
+    padding: 50px 50px 0 50px;
+    // border-bottom: 1px solid #f0f0f0;
+    @media only screen and (max-width: 400px) {
+      padding: 0px 0px 0 0px;
+    }
+    .signup_header {
+      @media only screen and (max-width: 568px) {
+        font-size: 17px !important;
+      }
+    }
+  }
+}
+
+.settings_main_box {
+  .inputs_fields_ratio {
+    @media only screen and (max-width: 768px) {
+      flex-direction: column !important;
+    }
+  }
+}
+
+.setting_profile {
+  @media only screen and (max-width: 568px) {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media only screen and (min-width: 569px) and (max-width: 1199px) {
+    flex-direction: row !important;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .setting_name {
+    width: 100%;
+    // word-break: break-all;
+    ul {
+      padding: 0;
+      list-style: none;
+
+      li {
+        margin: 10px 0;
+
+        .edit_btn {
+          text-align: left;
+        }
+        .profile_prescriber_btn {
+          color: #515b60;
+          font-size: 20px;
+          font-weight: 600;
+          background-color: #fff;
+          border: 1px solid #fff;
+          border-radius: 8px;
+          box-shadow: none;
+          height: 45px;
+          // max-height: 100px;
+          white-space: nowrap;
+          overflow:hidden;
+          // overflow-y: auto;
+          text-transform: capitalize;
+          width: 100%;
+          line-height: 0.9;
+          justify-content: start;
+          text-align: left;
+          gap:6px;
+          &.active {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+            background-color: #00acba !important;
+            border: 1px solid #00acba !important;
+            border-radius: 8px;
+            box-shadow: none;
+            height: 45px;
+            text-transform: capitalize;
+          }
+
+          .search-inputfield-btn {
+            width: 30px;
+            display: flex;
+            align-items: center;
+          }
+        }
+        .search-inputfield-btn {
+          display: flex;
+          align-items: center;
+          width: 30px;
+        }
+        .settings_btn {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start !important;
+          border-radius: 20px 0 !important;
+          width: 100%;
+          white-space: nowrap;
+        }
+
+        h3 {
+          font-family: 'Titillium Web';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          text-transform: capitalize;
+          color: #263238;
+          margin-left: 20px;
+          padding-bottom: 8px;
+          margin-top: -10px;
+        }
+      }
+    }
+  }
+}
+.user_profile_alignment{
+  
+  @media only screen and (max-width: 1199px){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
